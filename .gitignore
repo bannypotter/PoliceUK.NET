@@ -22,6 +22,9 @@ build/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+# Visual Studio 2015 cache/options directory
+.vs/
+
 *_i.c
 *_p.c
 *.ilk
