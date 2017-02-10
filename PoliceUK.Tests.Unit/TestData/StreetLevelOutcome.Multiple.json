@@ -1,0 +1,52 @@
+﻿[
+  {
+    "category": {
+      "code": "imprisoned",
+      "name": "Offender sent to prison"
+    },
+    "date": "2013-01",
+    "person_id": 7508313,
+    "crime": {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location_subtype": "",
+      "persistent_id": "5ae43b96a401aea27b4a82898652f6fd88354115d20fdb8bbfaf5b16da2ff9f8",
+      "month": "2012-01",
+      "location": {
+        "latitude": 52.63447444219649,
+        "street": {
+          "id": 883498,
+          "name": "On or near Kate Street"
+        },
+        "longitude": -1.1491966631305148
+      },
+      "context": "",
+      "id": 9723278
+    }
+  },
+  {
+    "category": {
+      "code": "no-further-action",
+      "name": "Investigation complete; no suspect identified"
+    },
+    "date": "2013-01",
+    "person_id": null,
+    "crime": {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location_subtype": "",
+      "persistent_id": "96716a931aa965894af2456ad8ae2216af0c270294f6ae67758e579eb2c48e82",
+      "month": "2012-02",
+      "location": {
+        "latitude": 52.63447444219649,
+        "street": {
+          "id": 883498,
+          "name": "On or near Kate Street"
+        },
+        "longitude": -1.1491966631305148
+      },
+      "context": "",
+      "id": 10464498
+    }
+  }
+]

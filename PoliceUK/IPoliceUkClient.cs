@@ -34,6 +34,19 @@
         StreetLevelCrimeResults StreetLevelCrimes(IEnumerable<IGeoposition> polygon, DateTime? date = null);
 
         /// <summary>
+        /// Outcomes at street-level; within a 1 mile radius of a single point.
+        /// 
+        /// IMPORTANT NOTE: The street-level outcomes returned in the API are only an approximation of where
+        /// the actual crime occured, they are NOT exact locations.
+        /// </summary>
+        /// <param name="position">Latitude and Longitude  of the requested crime area</param>
+        /// <param name="date">Optional. (YYYY-MM) Limit results to a specific month.
+        /// The latest month will be shown by default.
+        /// </param>
+        /// <returns></returns>
+        StreetLevelOutcomeResults StreetLevelOutcomes(IGeoposition position, DateTime? date = null);
+
+        /// <summary>
         /// Returns a list of valid categories for a given data set date.
         /// </summary>
         IEnumerable<Category> CrimeCategories(DateTime date);

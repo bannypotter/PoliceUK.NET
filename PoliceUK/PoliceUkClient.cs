@@ -73,6 +73,29 @@
             };
         }
 
+        public StreetLevelOutcomeResults StreetLevelOutcomes(IGeoposition position, DateTime? date = null)
+        {
+            if (position == null)
+            {
+                throw new ArgumentNullException("position");
+            }
+
+            string url = string.Format("{0}outcomes-at-location?lat={1}&lng={2}", ApiPath,
+                position.Latitude,
+                position.Longitude);
+
+            if (date.HasValue) url += string.Format("&date={0:yyyy'-'MM}", date.Value);
+
+            IHttpWebRequest request = BuildGetWebRequest(url);
+            ParsedResponse<Outcome[]> response = ProcessJsonRequest<Outcome[]>(request);
+
+            return new StreetLevelOutcomeResults
+            {
+                TooManyCrimesOrError = (response.StatusCode == HttpStatusCode.ServiceUnavailable),
+                Outcomes = response.Data
+            };
+        }
+
         public IEnumerable<Category> CrimeCategories(DateTime date)
         {
             string url = string.Format("{0}crime-categories?date={1:yyyy'-'MM}", ApiPath,

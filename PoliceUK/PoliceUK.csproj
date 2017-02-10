@@ -53,6 +53,7 @@
     <Compile Include="Entities\Neighbourhood\NeighbourhoodEvent.cs" />
     <Compile Include="Entities\Neighbourhood\NeighbourhoodTeamMember.cs" />
     <Compile Include="Entities\Neighbourhood\NeighbourhoodSummary.cs" />
+    <Compile Include="Entities\OutcomeCategory.cs" />
     <Compile Include="Entities\StreetLevel\LastUpdated.cs" />
     <Compile Include="Entities\StreetLevel\Crime.cs" />
     <Compile Include="Entities\Force\ForceDetails.cs" />
@@ -62,6 +63,8 @@
     <Compile Include="Entities\Location\Street.cs" />
     <Compile Include="Entities\OutcomeStatus.cs" />
     <Compile Include="Entities\StreetLevel\Availability.cs" />
+    <Compile Include="Entities\StreetLevel\Outcome.cs" />
+    <Compile Include="Entities\StreetLevel\StreetLevelOutcomeResults.cs" />
     <Compile Include="Exceptions\DataRequestException.cs" />
     <Compile Include="Exceptions\InvalidDataException.cs" />
     <Compile Include="Geoposition.cs" />

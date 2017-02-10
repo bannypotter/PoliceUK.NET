@@ -53,11 +53,13 @@
     <Compile Include="CustomAssertions\Equality\NeighbourhoodDetails\ContactDetailsEqualityComparer.cs" />
     <Compile Include="CustomAssertions\Equality\NeighbourhoodDetails\NeighbourhoodDetailsEqualityComparer.cs" />
     <Compile Include="CustomAssertions\Equality\NeighbourhoodDetails\NeighbourhoodEventEqualityComparer.cs" />
+    <Compile Include="CustomAssertions\Equality\OutcomeEqualityComparer.cs" />
     <Compile Include="NeighbourhoodBoundaryTests.cs" />
     <Compile Include="NeighbourhoodTeamTest.cs" />
     <Compile Include="NeighbourhoodEventsTest.cs" />
     <Compile Include="NeighbourhoodTests.cs" />
     <Compile Include="LastUpdatedTests.cs" />
+    <Compile Include="StreetLevelOutcomesTests.cs" />
     <Compile Include="TestDataFactories\CrimeDataFactory.cs" />
     <Compile Include="CustomAssertions\CustomAssert.cs" />
     <Compile Include="CustomAssertions\Equality\AbstractEqualityComparer.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CrimesTests.cs" />
     <Compile Include="StreetLevelCrimesTests.cs" />
+    <Compile Include="TestDataFactories\StreetLevelOutcomeDataFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -101,6 +104,8 @@
     <EmbeddedResource Include="TestData\LastUpdated.json" />
     <EmbeddedResource Include="TestData\NeighbourhoodTeam.Multiple.json" />
     <EmbeddedResource Include="TestData\NeighbourhoodEvents.Multiple.json" />
+    <EmbeddedResource Include="TestData\StreetLevelOutcome.Multiple.json" />
+    <EmbeddedResource Include="TestData\StreetLevelOutcome.Single.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TestData\NotFound.txt" />
